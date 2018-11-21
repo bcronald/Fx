@@ -1,0 +1,20 @@
+{
+  "short_name": "Fx",
+  "name": "Freight Extension",
+  "author": "Clement Ronald Amirtharaj",
+  "description": "Add some effects and improves FOIS website.",
+  "manifest_version": 2,  
+  "version": "0.1",
+  "homepage_url": "https://github.com/bcronald",
+  "icons": {
+	  "32": "icons/fx-32.png",
+	  "48": "icons/fx-48.png",
+	  "64": "icons/fx-64.png"
+  },
+  "content_scripts": [
+   {
+      "matches": ["*://fois.indianrail.gov.in/foisweb/view/trxn/RT_FrgtConfPosnSRIN.jsp"],
+      "js": ["freight_conf.js"]
+    }
+  ]
+}
